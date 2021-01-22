@@ -1,7 +1,7 @@
-import React from react;
+import React from 'react';
 import PropTypes from 'prop-types';
 
-class ChuldComponent extends React.Component{
+class ChildComponent extends React.Component{
 	render(){
 		const {
 			boolValue,
@@ -34,4 +34,4 @@ ChildComponent.propTypes = {
 	funcValue: PropTypes.func,
 }
 
-export default ChuldComponent;
+export default ChildComponent;
