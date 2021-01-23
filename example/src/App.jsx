@@ -1,5 +1,7 @@
 import React from 'react';
-import ChildComponent2 from './03/ChildComponent2';
+import ChildProperty from './03/ChildProperty';
+//import DefaultPropsComponent from './03/DefaultPropsComponent';
+//import ChildComponent2 from './03/ChildComponent2';
 //import BooleanComponent from './03/BooleanComponent';
 //import ChildComponent from './03/ChildComponent';
 //import PropComponent from './03/PropsComponent';
@@ -14,12 +16,27 @@ class App extends React.Component {
 		*/
 		
 		return (
+			
+			<ChildProperty>
+				<div>
+					<span>
+						자식노드
+					</span>
+				</div>
+			</ChildProperty>
+			/*
+			<div>
+				<DefaultPropsComponent/>
+			</div>
+			*/
+			/*
 			<div>
 				<ChildComponent2
 					objValue={{age: 20}}
 					requiredStringValue="문자"
 				/>
 			</div>
+			*/
 			/*
 			<div>
 				<div><b>지루할 때:</b><BooleanComponent bored/></div>
