@@ -1,5 +1,7 @@
 import React from 'react';
-import ChildProperty from './03/ChildProperty';
+import ForceUpdateExample from './03/ForceUpdateExample'
+//import StateExample from './03/StateExample';
+//import ChildProperty from './03/ChildProperty';
 //import DefaultPropsComponent from './03/DefaultPropsComponent';
 //import ChildComponent2 from './03/ChildComponent2';
 //import BooleanComponent from './03/BooleanComponent';
@@ -16,7 +18,15 @@ class App extends React.Component {
 		*/
 		
 		return (
+			<div>
+				<ForceUpdateExample />
+			</div>
 			
+			/*
+			<div>
+				<StateExample />
+			</div>*/
+			/*
 			<ChildProperty>
 				<div>
 					<span>
@@ -24,6 +34,7 @@ class App extends React.Component {
 					</span>
 				</div>
 			</ChildProperty>
+			*/
 			/*
 			<div>
 				<DefaultPropsComponent/>
