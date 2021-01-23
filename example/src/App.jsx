@@ -14,7 +14,7 @@ import TodoList from './03/TodoList';
 //import PropComponent from './03/PropsComponent';
 
 class App extends React.Component {
-	/*
+	
 	constructor(props) {
 		super(props);
 		this.state = {count: 10};
@@ -22,116 +22,19 @@ class App extends React.Component {
 	}
 	resetCount(){
 		this.setState(({count}) => ({count: count + 10}));
-	}*/
-	
-	/*
-	constructor(props) {
-		super(props);
-		this.state = {hasDestroyed: false};
 	}
-	
-	componentDidMount() {
-		this.setState({hasDestroyed:true})
-	}*/
+
 	
 	render(){
 		
-		/*
-		const array=[1,2,3];
-		const obj = {name:'제목', age:30};
-		const node = <h1>노드</h1>;
-		const func = () => {console.log('메시지')};
-		*/
+		                                                                                                  
 		
 		return (
 			
 			<div>
 				<TodoList/>
 			</div>
-			/*
-		<div>
-			<div>
-				<Counter count={this.state.count} /> 
-			</div>
-			<div>
-				<NewCounter count={this.state.count} /> 
-			</div>
-			<button onClick={this.resetCount}>{this.state.count + 10} 으로 초기화</button>
-		</div>
-		*/
-			/*
-			<div>
-				<div>
-					{this.state.hasDestroyed ? null : <lifeCycleExample />}
-				</div>
-			</div>
-			*/
-			/*
-			<div>
-				<LifecycleExample />
-			</div>
-			*/
-			/*
-			<div>
-				<ForceUpdateExample />
-			</div>
-			*/
-			/*
-			<div>
-				<StateExample />
-			</div>*/
-			/*
-			<ChildProperty>
-				<div>
-					<span>
-						자식노드
-					</span>
-				</div>
-			</ChildProperty>
-			*/
-			/*
-			<div>
-				<DefaultPropsComponent/>
-			</div>
-			*/
-			/*
-			<div>
-				<ChildComponent2
-					objValue={{age: 20}}
-					requiredStringValue="문자"
-				/>
-			</div>
-			*/
-			/*
-			<div>
-				<div><b>지루할 때:</b><BooleanComponent bored/></div>
-				<div><b>지루할 때:</b><BooleanComponent /></div>
-			</div>
-			*/
-			/*
-			<ChildComponent
-				boolValue={true}
-				numValye={1}
-				arrayValue={array}
-				objValue={obj}
-				nodeValue={node}
-				funcValue={func}
-			/>
-			*/
 			
-			/*
-			<ChildComponent
-				boolValue={true}
-				numValye={1}
-				arrayValue={[1,2,3]}
-				objValue={{name:'제목', age: 30}}
-				nodeValue={<h1>노드</h1>}
-				funcValue={()=>{console.log('메시지');}}
-			/>
-			*/
-			/*
-			<PropComponent name="do it react"/>
-			*/
 			
 		);
 	}
