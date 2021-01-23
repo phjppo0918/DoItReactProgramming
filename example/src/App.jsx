@@ -1,5 +1,10 @@
 import React from 'react';
-import ForceUpdateExample from './03/ForceUpdateExample'
+
+import Counter from './03/Counter';
+import NewCounter from './03/NewCounter';
+
+//import LifecycleExample from './03/LifecycleExample';
+//import ForceUpdateExample from './03/ForceUpdateExample'
 //import StateExample from './03/StateExample';
 //import ChildProperty from './03/ChildProperty';
 //import DefaultPropsComponent from './03/DefaultPropsComponent';
@@ -9,7 +14,28 @@ import ForceUpdateExample from './03/ForceUpdateExample'
 //import PropComponent from './03/PropsComponent';
 
 class App extends React.Component {
+	
+	constructor(props) {
+		super(props);
+		this.state = {count: 10};
+		this.resetCount = this.resetCount.bind(this);
+	}
+	resetCount(){
+		this.setState(({count}) => ({count: count + 10}));
+	}
+	
+	/*
+	constructor(props) {
+		super(props);
+		this.state = {hasDestroyed: false};
+	}
+	
+	componentDidMount() {
+		this.setState({hasDestroyed:true})
+	}*/
+	
 	render(){
+		
 		/*
 		const array=[1,2,3];
 		const obj = {name:'제목', age:30};
@@ -18,10 +44,28 @@ class App extends React.Component {
 		*/
 		
 		return (
+		<div>
+			<div>
+				<Counter count={this.state.count} /> 
+			</div>
+		</div>
+			/*
+			<div>
+				<div>
+					{this.state.hasDestroyed ? null : <lifeCycleExample />}
+				</div>
+			</div>
+			*/
+			/*
+			<div>
+				<LifecycleExample />
+			</div>
+			*/
+			/*
 			<div>
 				<ForceUpdateExample />
 			</div>
-			
+			*/
 			/*
 			<div>
 				<StateExample />
