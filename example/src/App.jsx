@@ -1,6 +1,6 @@
 import React from 'react';
-
-import Input from './03/Input';
+import './App.css';
+//import Input from './03/Input';
 //import Counter from './03/Counter';
 //import NewCounter from './03/NewCounter';
 //import LifecycleExample from './03/LifecycleExample';
@@ -32,7 +32,10 @@ class App extends React.Component {
 		return (
 			
 			<div>
-				<TodoList/>
+				<nav className="nav-wrapper">
+					<div>Do it! start to REACT!!</div>
+				</nav>
+				<h1> 머티리얼 CSS</h1>
 			</div>
 			
 			
