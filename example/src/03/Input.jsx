@@ -53,7 +53,7 @@ Input.propTypes = {
 	errorMessage: PropTypes.string,
 	label: PropTypes.string,
 	onChange: PropTypes.func,
-	onFocus: PropTypes.finc,
+	onFocus: PropTypes.func,
 	autoFocus: PropTypes.bool,
 };
 Input.defaultProps = {
