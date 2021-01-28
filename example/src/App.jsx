@@ -1,4 +1,5 @@
 import React from 'react';
+import './sass/materialize.scss';
 import './App.css';
 //import Input from './03/Input';
 //import Counter from './03/Counter';
@@ -35,7 +36,7 @@ class App extends React.Component {
 				<nav className="nav-wrapper">
 					<div>Do it! start to REACT!!</div>
 				</nav>
-				<h1> 머티리얼 CSS</h1>
+				<h1> matrialize CSS</h1>
 			</div>
 			
 			
