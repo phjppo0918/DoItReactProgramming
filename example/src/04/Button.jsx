@@ -1,3 +1,4 @@
+  
 import React, { PureComponent } from 'react';
 import PropTypes from 'prop-types';
 import withStyles, { css } from './withStyles';
@@ -57,7 +58,7 @@ Button.defaultProps = {
   primary: false,
 };
 
-export default withStyles(({ color, size, unit, responsive }) => ({
+export default withStyles(({ color, size, unit }) => ({
   default: {
     border: 1,
     borderStyle: 'solid',
@@ -66,15 +67,9 @@ export default withStyles(({ color, size, unit, responsive }) => ({
     color: color.default,
     fontSize: size.md,
     padding: unit * 2,
-    cursor: 'pointer',
-    [responsive.small]: {
-      width: '100%',
-    },
+    cursor: 'pointer',	
+  },
 
-  },
-  fullWidth: {
-    width: '100%',
-  },
   xlarge: {
     fontSize: size.xg,
   },
