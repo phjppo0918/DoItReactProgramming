@@ -38,7 +38,7 @@ class Input extends PureComponent {
 					onChange={this.handleChange}
 					value={value}
 				/>
-				<label className="active" for={`input_${name}`}>
+				<label className="active" htmlFor={`input_${name}`}>
 					{label}	
 				</label>
 				{errorMessage && <span className="helper-text" data-error={errorMessage}>{errorMessage}</span>}
