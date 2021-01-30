@@ -4,12 +4,12 @@ export default function withLoading(WrappedComponent) {
 	const { displayName, name: componentName} = WrappedComponent;
 	const wrappedComponentName = displayName || componentName;
 	
-	function WithLoading(props) {
-		if(props.isLoading) {
+	function WithLoading({isLoading, ...otherProps}) {
+		if(isLoading) {
 			return 'lodding~';
 		}
 		return (
-			<WrappedComponent {...props}/>
+			<WrappedComponent {...otherProps}/>
 		);
 	}
 	WithLoading.displayName = `withLoading(${wrappedComponentName})`;
