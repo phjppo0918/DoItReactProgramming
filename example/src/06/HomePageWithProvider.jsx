@@ -14,7 +14,7 @@ function RowCComponent() {
 function TableComponent() {
 	return (
 		<table>
-			<RowCComponent />
+			<RowBComponent />
 			<RowCComponent />
 		</table>
 	);
@@ -24,10 +24,12 @@ class HomePageComponent extends PureComponent {
 	
 	render() {
 		return (
-		<div>
+		<LoadingProvider>
 			<TableComponent />
-			<Button onPress={this.togleLoading}>상태 변경</Button>
-		</div>
+			<ButtonWithLoadingContext label="상태 변경"/>
+		</LoadingProvider>
 		);
 	}
 }
+
+export default HomePageComponent;
