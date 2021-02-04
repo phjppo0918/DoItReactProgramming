@@ -6,7 +6,7 @@ export default function withHoC(WrappedComponent) {
     return class WithHoC extends React.Component {
         static displayName = `withHoC(${WrappedComponentName})`;
         render() {
-            return <WrappedComponent {...this.porps}/>;
+            return <WrappedComponent {...this.props}/>;
         }
     }
 }

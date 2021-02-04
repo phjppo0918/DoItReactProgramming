@@ -3,7 +3,7 @@ import {storiesOf} from '@storybook/react';
 
 import Button from '../04/Button';
 import Text from '../04/Text';
-import withHoC from '../05/withHoC';
+import withHoC from '../new05/withHoC';
 
 const ButtonWithHoC = withHoC(Button);
 const TextWithHoC = withHoC(Text);
@@ -20,4 +20,4 @@ storiesOf('WithHoc', module)
              <ButtonWithHoC large>안녕하세요</ButtonWithHoC>
             <TextWithHoC large>안녕하세요</TextWithHoC>
         </div>
-    ))
+    ));
