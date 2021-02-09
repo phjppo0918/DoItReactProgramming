@@ -7,6 +7,9 @@ import Text from '../04/Text';
 import ButtonWithModal from '../06/modal/ButtonWithModal';
 import ModalProvider, { Consumer } from '../06/modal/ModalProvider';
 
+import ModalProviderWithKey, {CONFIRM_DELETE_MODAL} from '../06/modal/ModalProviderWithKey';
+import {Consumer as ModalConsumer} from '../06/modal/ModalContext';
+
 storiesOf('Modal', module)
     .addWithJSX('기본 설정', () => (
         <Modal>
@@ -31,4 +34,18 @@ storiesOf('Modal', module)
                 </Consumer>
             </div>
         </ModalProvider>
+    ))
+    .addWithJSX('ModalProviderWithKey',()=>(
+        <ModalProviderWithKey>
+            <div>
+                <Text>
+                    다음 버튼을 눌러 모달을 실행합니다.
+                </Text>
+                <ModalConsumer>
+                    {({openModal}) => (
+                        <Button onPress={() => openModal(CONFIRM_DELETE_MODAL)}> 모델 열기</Button>
+                    )}
+                </ModalConsumer>
+            </div>
+        </ModalProviderWithKey>
     ));
