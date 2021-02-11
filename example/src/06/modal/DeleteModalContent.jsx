@@ -10,7 +10,7 @@ export default function DeleteModalContent({id, name}) {
 				<div>
 					<div>
 						<Text>
-							정말로 삭제하시겠습니까?
+							{name}을 정말로 삭제하시겠습니까?
 						</Text>
 					</div>
 					<Button primary>예</Button>
