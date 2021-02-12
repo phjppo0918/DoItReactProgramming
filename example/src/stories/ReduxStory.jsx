@@ -7,6 +7,12 @@ import ReduxApp03 from '../07/ReduxApp03';
 
 import AdvReduxApp01 from '../07/AdvReduxApp01';
 import AdvReduxApp02 from '../07/AdvReduxApp02';
+import AdvReduxApp03 from '../07/AdvReduxApp03';
+import AdvReduxApp04 from '../07/AdvReduxApp04';
+import AdvReduxApp05 from '../07/AdvReduxApp05';
+
+
+
 
 
 
@@ -16,3 +22,9 @@ storiesOf('ReduxApp', module)
 	.addWithJSX('SET_LOADING reducer', () =><ReduxApp03/>)
 	.addWithJSX('advReduxApp 1', () => <AdvReduxApp01/>)
 	.addWithJSX('advReduxApp 2', () => <AdvReduxApp02/>)
+	.addWithJSX('advReduxApp 3', () => <AdvReduxApp03/>)
+	.addWithJSX('advReduxApp 4', () => <AdvReduxApp04/>)
+	.addWithJSX('advReduxApp 5', () => <AdvReduxApp05/>);
+
+	
+
