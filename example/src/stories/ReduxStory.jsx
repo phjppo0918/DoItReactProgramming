@@ -12,6 +12,8 @@ import AdvReduxApp04 from '../07/AdvReduxApp04';
 import AdvReduxApp05 from '../07/AdvReduxApp05';
 import AdvReduxApp06 from '../07/AdvReduxApp06';
 import AdvReduxApp07 from '../07/AdvReduxApp07';
+import AdvReduxApp08 from '../07/AdvReduxApp08';
+
 
 
 
@@ -29,7 +31,9 @@ storiesOf('ReduxApp', module)
 	.addWithJSX('advReduxApp 4', () => <AdvReduxApp04/>)
 	.addWithJSX('advReduxApp 5', () => <AdvReduxApp05/>)
 	.addWithJSX('advReduxApp 6', () => <AdvReduxApp06/>)
-	.addWithJSX('advReduxApp 7', () => <AdvReduxApp07/>);
+	.addWithJSX('advReduxApp 7', () => <AdvReduxApp07/>)
+	.addWithJSX('advReduxApp 8', () => <AdvReduxApp08/>);
+
 
 
 
