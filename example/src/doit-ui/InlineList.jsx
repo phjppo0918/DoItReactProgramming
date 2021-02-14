@@ -26,7 +26,7 @@ class InLineList extends PureComponent {
 InLineList.propTypes = {
 	...withStylesPropTypes,
 	align: PropTypes.oneOf(['left', 'center', 'right']),
-	verticalAlign: PropTypes.oneOf(['top', 'middle', 'botom']),
+	verticalAlign: PropTypes.oneOf(['top', 'middle', 'bottom']),
 	spacingBetween: PropTypes.number,
 	children: PropTypes.node,
 };
@@ -50,10 +50,10 @@ export default withStyles(() => ({
 		justifyContent: 'flex-end',
 	},
 	verticalAlignTop: {
-		alignItems: 'flex-end',
+		alignItems: 'flex-start',
 	},
 	verticalAlignBottom: {
-	alignItems: 'flex-end',
+		alignItems: 'flex-end',
 	},
 	
 }))(InLineList);
